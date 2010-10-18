@@ -1,5 +1,6 @@
 # Copyright 1999-2010 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
+# $Header: $
 
 EAPI=2
 
@@ -12,9 +13,10 @@ SRC_URI="http://gnome-look.org/CONTENT/content-files/121881-${MY_P}.tar.bz2"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE=""
+IUSE="+icons"
 
-RDEPEND="x11-libs/gtk+:2"
+RDEPEND="x11-libs/gtk+:2
+	icons? ( x11-themes/faenza-icon-theme )"
 DEPEND="${RDEPEND}
 	dev-util/pkgconfig"
 
@@ -25,7 +27,7 @@ src_unpack() {
 
 	echo Untarring engine files...
 	tar xpf "${WORKDIR}/equinox-gtk-engine.tar.gz" || die
-	cd ${S}
+	cd "${S}"
 
 	echo Untarring themes files...
 	mkdir themes
@@ -39,7 +41,7 @@ src_configure() {
 
 src_install() {
 	emake DESTDIR="${D}" install || die
-	dodoc AUTHORS COPYING ChangeLog NEWS
+	dodoc AUTHORS ChangeLog NEWS
 
 	echo Installing themes...
 	dodir /usr/share/themes/
