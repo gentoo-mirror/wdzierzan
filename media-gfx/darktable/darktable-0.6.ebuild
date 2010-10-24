@@ -11,7 +11,7 @@ SRC_URI="http://downloads.sourceforge.net/project/darktable/darktable/${PV}/${P}
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="+lensfun openmp gnome-keyring static-libs"
+IUSE="+lensfun openmp gnome-keyring static-libs nls"
 
 RDEPEND="dev-db/sqlite:3
 	dev-libs/dbus-glib
@@ -41,6 +41,7 @@ src_configure() {
 		$(use_enable gnome-keyring gkeyring ) \
 		$(use_enable openmp ) \
 		$(use_enable lensfun ) \
+		$(use_enable nls ) \
 		|| die
 }
 
