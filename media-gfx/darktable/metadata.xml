@@ -8,5 +8,6 @@
 	</maintainer>
 	<use>
 		<flag name="lensfun">Enable the lensfun lens-correction library</flag>
+		<flag name="watermark">Build the watermark plugin</flag>
 	</use>
 </pkgmetadata>
