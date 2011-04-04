@@ -45,7 +45,6 @@ src_prepare() {
 	epatch "${FILESDIR}/${P}-programming-error-unicode.patch"
 	epatch "${FILESDIR}/${P}-escaping-caracters.patch"
 	epatch "${FILESDIR}/${P}-rhythmbox-new-path.patch"
-	epatch "${FILESDIR}/${P}-fix-firefox-libraries.patch"
 
 	# disable pyc compiling
 	mv py-compile py-compile.orig
