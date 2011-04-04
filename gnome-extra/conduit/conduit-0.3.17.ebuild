@@ -15,7 +15,7 @@ LICENSE="GPL-2 BSD"
 SLOT="0"
 KEYWORDS="~amd64"
 #flickr nautilus
-IUSE="eog evolution ipod rss totem"
+IUSE="evo ipod rss"
 
 #DEPENDS extracted from http://packages.ubuntu.com/natty/conduit
 #http://stuvel.eu/flickrapi
@@ -28,7 +28,7 @@ DEPEND=">=dev-python/pygoocanvas-0.9.0
 		>=dev-python/pyxml-0.8.4
 		>=dev-python/pygtk-2.10.3
 		dev-python/gdata
-		evolution? ( dev-python/evolution-python )
+		evo? ( dev-python/evolution-python )
 		ipod? ( >=media-libs/libgpod-0.8.0[python] )
 		rss? ( dev-python/feedparser )
 		|| ( >=dev-lang/python-2.6 dev-python/simplejson )
