@@ -1,0 +1,14 @@
+# ChangeLog for gnome-extra/conduit
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*conduit-0.3.17 (04 Apr 2011)
+
+  04 Apr 2011; Wojciech Dzierżanowski <wojciech.dzierzanowski@gmail.com>
+  +conduit-0.3.17.ebuild, +files/conduit-0.3.17-escaping-caracters.patch,
+  +files/conduit-0.3.17-fix-firefox-libraries.patch,
+  +files/conduit-0.3.17-non-ASCII-folder-canvas.patch,
+  +files/conduit-0.3.17-programming-error-unicode.patch,
+  +files/conduit-0.3.17-rhythmbox-new-path.patch, +metadata.xml:
+  Initial version of conduit-0.3.17.ebuild by Florian Steinel
+
