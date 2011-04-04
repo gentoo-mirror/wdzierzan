@@ -15,7 +15,7 @@ LICENSE="GPL-2 BSD"
 SLOT="0"
 KEYWORDS="~amd64"
 #flickr nautilus
-IUSE="evo ipod rss"
+IUSE="evo ipod nls rss"
 
 #DEPENDS extracted from http://packages.ubuntu.com/natty/conduit
 #http://stuvel.eu/flickrapi
@@ -74,6 +74,7 @@ src_configure() {
 
 	econf \
 		${myconf} \
+		$(use_enable nls) \
 		|| die "configure failed"
 }
 
