@@ -1,0 +1,14 @@
+diff -urNad conduit~/conduit/MappingDB.py conduit/conduit/MappingDB.py
+--- conduit~/conduit/MappingDB.py	2009-08-30 13:33:34.000000000 +0200
++++ conduit/conduit/MappingDB.py	2009-08-30 13:40:49.000000000 +0200
+@@ -38,8 +38,8 @@
+         self.sinkRid = rid
+         
+     def values(self):
+-        return (self.sourceUID,self.sourceRid.get_UID(),self.sourceRid.get_mtime(),self.sourceRid.get_hash(),
+-                self.sinkUID,self.sinkRid.get_UID(),self.sinkRid.get_mtime(),self.sinkRid.get_hash())
++        return (unicode(self.sourceUID),unicode(self.sourceRid.get_UID()),self.sourceRid.get_mtime(),self.sourceRid.get_hash(),
++                unicode(self.sinkUID),unicode(self.sinkRid.get_UID()),self.sinkRid.get_mtime(),self.sinkRid.get_hash())
+         
+ class MappingDB:
+     """
