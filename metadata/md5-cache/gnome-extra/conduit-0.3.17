@@ -1,0 +1,14 @@
+DEFINED_PHASES=configure install postinst postrm prepare setup
+DEPEND=>=dev-python/pygoocanvas-0.9.0 >=dev-python/pywebkitgtk-1.1.8 >=dev-python/vobject-0.4.8 >=dev-python/pyxml-0.8.4 >=dev-python/pygtk-2.10.3 dev-python/gdata evo? ( dev-python/evolution-python ) ipod? ( >=media-libs/libgpod-0.8.0[python] ) rss? ( dev-python/feedparser ) || ( >=dev-lang/python-2.6 dev-python/simplejson ) || ( ( >=dev-lang/python-2.4 >=dev-python/pysqlite-2.3.1 ) >=dev-lang/python-2.5[sqlite] ) =dev-lang/python-2*
+DESCRIPTION=Synchronization for GNOME
+EAPI=2
+HOMEPAGE=http://live.gnome.org/Conduit
+IUSE=evo ipod nls rss
+KEYWORDS=~amd64
+LICENSE=GPL-2 BSD
+RDEPEND=>=dev-python/pygoocanvas-0.9.0 =dev-lang/python-2*
+SLOT=0
+SRC_URI=mirror://gnome/sources/conduit/0.3/conduit-0.3.17.tar.bz2
+_eclass_exported_funcs=pkg_postrm:- pkg_postinst:- pkg_setup:- src_prepare:- src_configure:- src_install:-
+_eclasses_=eutils	f20548a2f7b0128068388cd2ec26708a	gnome.org	ad34f378a3d57a6f2f2b8b4aaca4543e	multilib	3972ca401cf7dbb430df9995f5d8d580	python	0c2c16ea4f9074d3248bd4365d03890c	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85	versionator	99ae9d758cbe7cfed19170e7d48f5a9c
+_md5_=1a007f93d9784966757c167d3a2e08e5
